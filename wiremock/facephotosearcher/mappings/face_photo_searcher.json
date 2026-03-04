@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/face-photo-searcher/search-by-face-photo-template"
+  },
+  "response": {
+    "status": 200,
+    "body": 1000,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "fixedDelayMilliseconds": 1000
+  }
+}

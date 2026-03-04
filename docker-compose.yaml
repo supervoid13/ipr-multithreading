@@ -1,0 +1,45 @@
+services:
+
+  fingerprint-extractor-mock:
+    container_name: fingerprint-extractor-mock
+    image: wiremock/wiremock:3.5.2
+    volumes:
+      - ./wiremock/fingerprintextractor:/home/wiremock
+    command:
+      - -global-response-templating
+      - -verbose
+    ports:
+      - "8082:8080"
+
+  face-photo-extractor-mock:
+    container_name: face-photo-extractor-mock
+    image: wiremock/wiremock:3.5.2
+    volumes:
+      - ./wiremock/facephotoextractor:/home/wiremock
+    command:
+      - -global-response-templating
+      - -verbose
+    ports:
+      - "8083:8080"
+
+  fingerprint-searcher-mock:
+    container_name: fingerprint-searcher-mock
+    image: wiremock/wiremock:3.5.2
+    volumes:
+      - ./wiremock/fingerprintsearcher:/home/wiremock
+    command:
+      - -global-response-templating
+      - -verbose
+    ports:
+      - "8084:8080"
+
+  face-photo-searcher-mock:
+    container_name: face-photo-searcher-mock
+    image: wiremock/wiremock:3.5.2
+    volumes:
+      - ./wiremock/facephotosearcher:/home/wiremock
+    command:
+      - -global-response-templating
+      - -verbose
+    ports:
+      - "8085:8080"

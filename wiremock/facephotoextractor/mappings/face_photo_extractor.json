@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/face-photo-extractor/extract-face-photos"
+  },
+  "response": {
+    "status": 200,
+    "body": "/face-photo-template-bucket/some-uri",
+    "headers": {
+      "Content-Type": "text/plain"
+    },
+    "fixedDelayMilliseconds": 1000
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/fingerprint-extractor/extract-fingerprints"
+  },
+  "response": {
+    "status": 200,
+    "body": "/fingerprint-template-bucket/some-uri",
+    "headers": {
+      "Content-Type": "text/plain"
+    },
+    "fixedDelayMilliseconds": 1000
+  }
+}

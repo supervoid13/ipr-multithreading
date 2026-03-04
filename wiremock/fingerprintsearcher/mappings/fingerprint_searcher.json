@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/fingerprint-searcher/search-by-fingerprint-template"
+  },
+  "response": {
+    "status": 200,
+    "body": 1000,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "fixedDelayMilliseconds": 1000
+  }
+}

@@ -3,9 +3,9 @@ spring:
     name: ipr-multithreading
 logging:
   level:
-    org.uneev.iprmultithreading: debug
+    org.uneev.iprmultithreading: info
 
 server:
   tomcat:
     threads:
-      max: 1
+      max: 10

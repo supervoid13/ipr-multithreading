@@ -8,6 +8,8 @@ services:
     command:
       - -global-response-templating
       - -verbose
+      - --container-threads
+      - "160"
     ports:
       - "8082:8080"
 
@@ -19,6 +21,8 @@ services:
     command:
       - -global-response-templating
       - -verbose
+      - --container-threads
+      - "160"
     ports:
       - "8083:8080"
 
@@ -30,6 +34,8 @@ services:
     command:
       - -global-response-templating
       - -verbose
+      - --container-threads
+      - "160"
     ports:
       - "8084:8080"
 
@@ -41,5 +47,7 @@ services:
     command:
       - -global-response-templating
       - -verbose
+      - --container-threads
+      - "160"
     ports:
       - "8085:8080"
